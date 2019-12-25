@@ -34,7 +34,10 @@
     },
     "polybar": {
         "background": "#",
+<<<<<<< HEAD
         "tray-background": "#",
+=======
+>>>>>>> 6df8514ac430c98145505ae3501a536da9285453
         "foreground": "#",
         "modules-left": "wlan eth",
         "modules-center": "i3",
@@ -55,9 +58,13 @@
         "format-connected-foreground": "#",
         "format-connected-background": "#",
         "format-connected-prefix-foreground": "#",
+<<<<<<< HEAD
         "ramp-signal-foreground": "#", 
         "format-volume-foreground": "#", 
         "label-muted-foreground": "#"
+=======
+        "ramp-signal-foreground": "#"
+>>>>>>> 6df8514ac430c98145505ae3501a536da9285453
     },
     "wallpaper": "[wallpaper_name].png"
 }

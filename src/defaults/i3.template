@@ -214,7 +214,11 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
+<<<<<<< HEAD
 exec_always --no-startup-id /$HOME/.config/polybar/i3wmthemer_bar_launch.sh
+=======
+exec_always --no-startup-id $HOME/.config/polybar/i3wmthemer_bar_launch.sh
+>>>>>>> 6df8514ac430c98145505ae3501a536da9285453
 
 # Theme colors
 client.focused          #272827 #272827 #657b83 #272827 #272827
@@ -277,4 +281,8 @@ bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 
 # touchpad on and off controller on laptop with Fn+<touchpad control functional key>
 bindsym XF86TouchpadOn exec --no-startup-id synclient Touchpadoff=0
+<<<<<<< HEAD
 bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1
+=======
+bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1
+>>>>>>> 6df8514ac430c98145505ae3501a536da9285453

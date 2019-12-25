@@ -1,0 +1,5 @@
+i3-config: /home/zhumeng/.config/i3/config
+polybar-config: /home/zhumeng/.config/polybar/config
+xresources: /home/zhumeng/.Xresources
+nitrogen-config: /home/zhumeng/.config/nitrogen/bg-saved.cfg
+wallpaper-path: /home/zhumeng/.config/nitrogen/

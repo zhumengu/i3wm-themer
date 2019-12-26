@@ -14,10 +14,7 @@ def replace_polybar( configuration, json_file):
             prnt.prnt( '-s', 'Found you polybar info in the JSON file')
 
             rl.replace_line( configuration['polybar-config'], 'background =', 'background = '+polybar['background'])
-<<<<<<< HEAD
             rl.replace_line( configuration['polybar-config'], 'tray-background =', 'tray-background = '+polybar['background'])
-=======
->>>>>>> 6df8514ac430c98145505ae3501a536da9285453
             rl.replace_line( configuration['polybar-config'], 'foreground =', 'foreground = '+polybar['foreground'])
             rl.replace_line( configuration['polybar-config'], 'modules-left', 'modules-left = '+polybar['modules-left'])
             rl.replace_line( configuration['polybar-config'], 'modules-center', 'modules-center = '+polybar['modules-center'])

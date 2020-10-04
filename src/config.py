@@ -9,7 +9,8 @@ def read_config( path ):
     if( fileu.locate_file( path ) ):
         prnt.prnt( '-n', 'Located the config file')
         config_path = open( path, 'r')
-        config = yaml.load_all(config_path, Loader=yaml.FullLoader)
+        # config = yaml.load_all(config_path, Loader=yaml.FullLoader)
+        config = yaml.load_all(config_path, Loader=yaml.Loader)
 
         for conf in config:
             for n, v in conf.items( ):

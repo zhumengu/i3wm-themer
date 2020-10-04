@@ -42,7 +42,7 @@
         "label-unfocused-foreground": "#131822",
         "label-mode-background": "#131822",
         "label-mode-foreground": "#131822",
-        "label-focused-foreground": "#131822",
+        "label-focused-foreground": "#fff",
         "label-focused-background": "#233f66",
         "label-visible-background": "#233f66",
         "label-visible-foreground": "#131822",

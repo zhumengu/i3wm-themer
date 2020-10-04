@@ -32,40 +32,35 @@ else
     exit 1
 fi
 
-
 #file didn't exist for me, so test and touch
-if [ -e $HOME/.Xresources ]
-then
-	echo "... .Xresources found."
+if [ -e $HOME/.Xresources ]; then
+    echo "... .Xresources found."
 else
-	touch $HOME/.Xresources
+    touch $HOME/.Xresources
 fi
 
 #file didn't exist for me, so test and touch
-if [ -e $HOME/.config/nitrogen/bg-saved.cfg ]
-then
-	echo "... .bg-saved.cfg found."
+if [ -e $HOME/.config/nitrogen/bg-saved.cfg ]; then
+    echo "... .bg-saved.cfg found."
 else
-	mkdir -p $HOME/.config/nitrogen
-	touch $HOME/.config/nitrogen/bg-saved.cfg
+    mkdir -p $HOME/.config/nitrogen
+    touch $HOME/.config/nitrogen/bg-saved.cfg
 fi
 
 #file didn't exist for me, so test and touch
-if [ -e $HOME/.config/polybar/config ]
-then
-        echo "... polybar/config found."
+if [ -e $HOME/.config/polybar/config ]; then
+    echo "... polybar/config found."
 else
-	mkdir -p $HOME/.config/polybar
-        touch $HOME/.config/polybar/config
+    mkdir -p $HOME/.config/polybar
+    touch $HOME/.config/polybar/config
 fi
 
 #file didn't exist for me, so test and touch
-if [ -e $HOME/.config/i3/config ]
-then
-        echo "... i3/config found."
+if [ -e $HOME/.config/i3/config ]; then
+    echo "... i3/config found."
 else
-        mkdir -p $HOME/.config/i3
-        touch $HOME/.config/i3/config
+    mkdir -p $HOME/.config/i3
+    touch $HOME/.config/i3/config
 fi
 
 #rework of user in config.yaml
@@ -84,4 +79,3 @@ python i3wm-themer.py --config config.yaml --install defaults/
 
 echo ""
 echo "Read the README.md"
-

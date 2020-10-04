@@ -3,11 +3,10 @@
 ### 20180515 Script written and fully commented by James Shane ( github.com/jamesshane )
 
 #look for env command and link if not found to help make scripts uniform
-if [ -e /bin/env ]
-then
-	echo "... /bin/env found."
+if [ -e /bin/env ]; then
+    echo "... /bin/env found."
 else
-	sudo ln -s /usr/bin/env /bin/env
+    sudo ln -s /usr/bin/env /bin/env
 fi
 
 #ugh
@@ -40,14 +39,13 @@ autoreconf --force --install
 rm -Rf build/
 mkdir build
 cd build/
- ../configure --prefix=/usr --sysconfdir=/etc
- make
- sudo make install
+../configure --prefix=/usr --sysconfdir=/etc
+make
+sudo make install
 # which i3
 # ls -l /usr/bin/i3
 cd ../..
 rm -fr i3-gaps
-
 
 #added binutils,gcc,make,pkg-config,fakeroot for compilations, removed yaourt
 sudo apt install git nitrogen rofi python-pip binutils gcc make pkg-config fakeroot cmake python-xcbgen xcb-proto libxcb-ewmh-dev wireless-tools libiw-dev libasound2-dev libpulse-dev libcurl4-openssl-dev libmpdclient-dev pavucontrol -y
@@ -78,38 +76,34 @@ cd ../..
 rm -fr polybar
 
 #file didn't exist for me, so test and touch
-if [ -e $HOME/.Xresources ]
-then
-	echo "... .Xresources found."
+if [ -e $HOME/.Xresources ]; then
+    echo "... .Xresources found."
 else
-	touch $HOME/.Xresources
+    touch $HOME/.Xresources
 fi
 
 #file didn't exist for me, so test and touch
-if [ -e $HOME/.config/nitrogen/bg-saved.cfg ]
-then
-        echo "... .bg-saved.cfg found."
+if [ -e $HOME/.config/nitrogen/bg-saved.cfg ]; then
+    echo "... .bg-saved.cfg found."
 else
-				mkdir $HOME/.config/nitrogen
-        touch $HOME/.config/nitrogen/bg-saved.cfg
+    mkdir $HOME/.config/nitrogen
+    touch $HOME/.config/nitrogen/bg-saved.cfg
 fi
 
 #file didn't excist for me, so test and touch
-if [ -e $HOME/.config/polybar/config ]
-then
-        echo "... polybar/config found."
+if [ -e $HOME/.config/polybar/config ]; then
+    echo "... polybar/config found."
 else
-				mkdir $HOME/.config/polybar
-        touch $HOME/.config/polybar/config
+    mkdir $HOME/.config/polybar
+    touch $HOME/.config/polybar/config
 fi
 
 #file didn't excist for me, so test and touch
-if [ -e $HOME/.config/i3/config ]
-then
-        echo "... i3/config found."
+if [ -e $HOME/.config/i3/config ]; then
+    echo "... i3/config found."
 else
-				mkdir $HOME/.config/i3
-        touch $HOME/.config/i3/config
+    mkdir $HOME/.config/i3
+    touch $HOME/.config/i3/config
 fi
 
 #rework of user in config.yaml

@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-i3-config: /home/zhumeng/.config/i3/config
-polybar-config: /home/zhumeng/.config/polybar/config
-xresources: /home/zhumeng/.Xresources
-nitrogen-config: /home/zhumeng/.config/nitrogen/bg-saved.cfg
-wallpaper-path: /home/zhumeng/.config/nitrogen/
-=======
 i3-config: /home/USER/.config/i3/config
 polybar-config: /home/USER/.config/polybar/config
 xresources: /home/USER/.Xresources
 nitrogen-config: /home/USER/.config/nitrogen/bg-saved.cfg
 wallpaper-path: /home/USER/.config/nitrogen/
->>>>>>> 6df8514ac430c98145505ae3501a536da9285453
